@@ -1,20 +1,39 @@
-
 const goods = [
-    { title: 'Shirt', price: 150 },
-    { title: 'Socks', price: 50 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
+    {
+        img: '/img/shirt.jpg', 
+        title: 'Shirt', 
+        price: 150 
+    },
+    { 
+        img: '/img/socks.jpg',
+        title: 'Socks',
+        price: 50 
+    },
+    { 
+        img: '/img/jacket.jpg',
+        title: 'Jacket',
+        price: 350 
+    },
+    { 
+        img: '/img/shoes.jpg',
+        title: 'Shoes', 
+        price: 250 
+    }
   ];
   
-  const renderGoodsItem = (title, price) => {
-    return `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
+  const renderGoodsItem = (img ,title, price) => {
+    return `<div class="goods-item">
+                <img class="goods-item__img" src="${img}" alt="${title}">
+                <div class="goods-item__text">
+                    <h3 class="goods-item__title">${title}</h3>
+                    <p class="good-item__price">Цена: ${price} руб.</p>
+                </div>
+            </div>`;
   };
   
   const renderGoodsList = (list) => {
-    let goodsList = list.map(item => renderGoodsItem(item.title, item.price));
-    document.querySelector('.goods-list').innerHTML = goodsList;
+    let goodsList = list.map(item => renderGoodsItem(item.img ,item.title, item.price));
+    document.querySelector('.goods-list').innerHTML = goodsList.join('');
   }
   
   renderGoodsList(goods);
-  
-  
