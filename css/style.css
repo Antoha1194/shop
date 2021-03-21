@@ -478,4 +478,39 @@ template {
   width: 100%;
   background-color: #0b770b;
 }
+
+.add-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #25cc1a;
+}
+
+.add-basket__button {
+  width: 200px;
+  background: none;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-shadow: 1px 0px black;
+}
+
+.add-basket__button:hover {
+  border-bottom: 2px solid #747474;
+}
+
+.add-basket__button:active {
+  border: none;
+}
+
+.add-basket__column {
+  width: 50px;
+}
 /*# sourceMappingURL=style.css.map */

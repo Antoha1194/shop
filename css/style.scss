@@ -111,3 +111,34 @@
         background-color: #0b770b;
     }
 }
+
+.add-basket{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #25cc1a;
+
+    &__button{
+        width: 200px;
+        background: none;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-shadow: 1px 0px black;
+        
+        
+        &:hover{
+            border-bottom: 2px solid rgb(116, 116, 116);
+        }
+        &:active{
+            border: none;
+        }
+    }
+
+    &__column{
+        width: 50px;
+    }
+}
