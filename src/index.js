@@ -1,4 +1,4 @@
-
+import "./css/style.scss";
 const  API = {
     baseURL: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses",
     getCatalog: "/catalogData.json",
